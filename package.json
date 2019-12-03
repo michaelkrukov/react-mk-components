@@ -1,0 +1,42 @@
+{
+  "name": "react-mk-components",
+  "version": "1.0.0",
+  "description": "Useful React components for projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel src --out-file dist/index.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "library",
+    "collection"
+  ],
+  "author": "Michael Krukov",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^3.2.1",
+    "less": "^3.10.3",
+    "style-loader": "^1.0.1"
+  },
+  "peerDependencies": {
+    "react": "^16.6.1",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "@storybook/addon-actions": "^5.2.8",
+    "@storybook/addon-links": "^5.2.8",
+    "@storybook/addons": "^5.2.8",
+    "@storybook/react": "^5.2.8",
+    "babel-loader": "^8.0.6",
+    "classnames": "^2.2.6",
+    "less-loader": "^5.0.0"
+  }
+}
