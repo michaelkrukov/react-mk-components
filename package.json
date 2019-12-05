@@ -5,12 +5,13 @@
   "author": "michaelkrukov",
   "license": "MIT",
   "repository": "michaelkrukov/react-mk-components",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "engines": {
     "node": ">=8",
     "npm": ">=5"
   },
   "scripts": {
+    "build": "rollup -c rollup.config.babel.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@babel/cli": "^7.7.4",
     "@babel/core": "^7.7.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "@babel/preset-react": "^7.7.4",
     "@storybook/addon-actions": "^5.2.8",
@@ -28,7 +30,14 @@
     "@storybook/addons": "^5.2.8",
     "@storybook/react": "^5.2.8",
     "babel-loader": "^8.0.6",
-    "styled-jsx": "^3.2.4"
+    "rollup": "^1.27.8",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-serve": "^1.0.1",
+    "rollup-watch": "^4.3.1"
   },
   "dependencies": {
     "classnames": "^2.2.6",

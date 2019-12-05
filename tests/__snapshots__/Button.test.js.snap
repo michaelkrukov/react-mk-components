@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders 1`] = `
+<button
+  className="Button"
+  type="button"
+>
+  button
+</button>
+`;
+
+exports[`Button renders as block 1`] = `
+<button
+  className="Button block"
+  type="button"
+>
+  button
+</button>
+`;
+
+exports[`Button renders with color 1`] = `
+<button
+  className="Button primary"
+  type="button"
+>
+  button
+</button>
+`;
