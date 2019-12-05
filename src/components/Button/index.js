@@ -1,59 +1,51 @@
-import React, { Fragment } from 'react';
-import css from 'styled-jsx/css';
-import classNames from 'classnames';
-import { getColorNameFromProps, getColorFromTheme } from '../constants';
+import React from 'react';
+import classNames from 'classnames/bind';
+import style from './style.less';
 
-const getComponentStyles = (props) => {
-  const color = getColorNameFromProps(props);
+const cx = classNames.bind(style);
 
-  const { className, styles } = css.resolve`
-    .btn {
-      display: inline-block;
-      border: 0;
-      border-radius: 0.25rem;
-      padding: 0.5rem 1rem;
-      text-align: center;
-      text-decoration: none;
-      background-color: ${getColorFromTheme(color, props.theme)};
-      color: black;
-    }
+const Button = ({
+  /* Basic */
+  className,
+  children,
+  as,
+  /* Colors */
+  primary,
+  secondary,
+  danger,
+  success,
+  warning,
+  info,
+  dark,
+  light,
+  transparent,
+  /* Display */
+  block,
 
-    .btn:hover {
-      background-color: darken(@secondary, 10%);
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .btn:active, .btn:focus {
-        outline: none;
-    }
-
-    .block {
-      display: block;
-      width: 100%;
-    }
-  `;
-
-  return {
-    className: classNames('btn', className, props.className, {
-      block: props.block,
-    }),
-    styles,
-  }
-};
-
-const Button = ({ children, as, ...rest }) => {
-  const { className, styles } = getComponentStyles(rest);
+  ...rest
+}) => {
+  const classes = {
+    primary,
+    secondary,
+    danger,
+    success,
+    warning,
+    info,
+    dark,
+    light,
+    transparent,
+    block,
+  };
 
   const Component = as || ((props) => <button type="button" {...props} />);
 
   return (
-    <>
-      <Component className={className} {...rest}>
-        {children}
-      </Component>
-      {styles}
-    </>
+    <Component
+      className={cx('Button', classes, className)}
+      {...rest}
+    >
+      {children}
+    </Component>
   );
 };
 

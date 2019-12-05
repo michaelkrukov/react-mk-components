@@ -32,6 +32,10 @@
     "styled-jsx": "^3.2.4"
   },
   "dependencies": {
-    "classnames": "^2.2.6"
+    "classnames": "^2.2.6",
+    "css-loader": "^3.2.1",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "style-loader": "^1.0.1"
   }
 }
