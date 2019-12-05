@@ -1,0 +1,26 @@
+.hidden {
+    display: none;
+}
+
+.TransitionFade {
+    &.enter {
+        visibility: visible;
+        opacity: 1;
+    }
+    &.exit {
+        visibility: hidden;
+        opacity: 0;
+    }
+    &.active {
+        transition: visibility 400ms ease-out, opacity 400ms ease-out;
+    }
+    &.active.instant {
+        transition: visibility 0ms ease-out, opacity 0ms ease-out;
+    }
+    &.active.quick {
+        transition: visibility 200ms ease-out, opacity 200ms ease-out;
+    }
+    &.active.slow {
+        transition: visibility 600ms ease-out, opacity 600ms ease-out;
+    }
+}
