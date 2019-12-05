@@ -1,5 +1,5 @@
-import React from 'react';
-import { Modal } from '../src';
+import React, { useState } from 'react';
+import { Button, Modal } from '../src';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 

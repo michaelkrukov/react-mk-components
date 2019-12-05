@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal renders 1`] = `
+<div>
+  <button
+    className="Button info block"
+    onClick={[Function]}
+    type="button"
+  >
+    Toggle
+  </button>
+  <div
+    className="TransitionFade exit quick"
+  >
+    <div
+      className="ModalWrapper"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      role="region"
+    >
+      <div
+        className="ModalDialog centered"
+      >
+        <div
+          className="ModalContent"
+        >
+          <div
+            style={
+              Object {
+                "padding": "1rem",
+                "textAlign": "center",
+              }
+            }
+          >
+            Hello there!
+            <br />
+            Hello there!
+            <br />
+            Hello there!
+            <br />
+            Hello there!
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ModalBackdropComponent static"
+    />
+  </div>
+</div>
+`;
