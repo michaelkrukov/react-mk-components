@@ -16,3 +16,6 @@ export {
 export {
     default as BodyEnd
 } from './components/BodyEnd';
+export {
+    Row, Col
+} from './components/Grid';

@@ -1,0 +1,109 @@
+@import '../../constants.less';
+
+@columns: 12;
+
+.Row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Col {
+    flex-grow: 1;
+}
+
+each(range(12), {
+    @perc: percentage(@value / @columns);
+
+    .Col-@{value} {
+        flex: 0 0 @perc;
+        max-width: @perc;
+    }
+
+    &.offset-@{value} {
+        margin-left: @perc;
+    }
+});
+
+@media screen and (min-width: @sm) {
+    each(range(12), {
+        @perc: percentage(@value / @columns);
+
+        .Col-sm-@{value} {
+            flex: 0 0 @perc;
+            max-width: @perc;
+        }
+
+        &.offset-sm-@{value} {
+            margin-left: @perc;
+        }
+    });
+}
+
+@media screen and (min-width: @md) {
+    each(range(12), {
+        @perc: percentage(@value / @columns);
+
+        .Col-md-@{value} {
+            flex: 0 0 @perc;
+            max-width: @perc;
+        }
+
+        &.offset-md-@{value} {
+            margin-left: @perc;
+        }
+    });
+}
+
+@media screen and (min-width: @lg) {
+    each(range(12), {
+        @perc: percentage(@value / @columns);
+
+        .Col-lg-@{value} {
+            flex: 0 0 @perc;
+            max-width: @perc;
+        }
+
+        &.offset-lg-@{value} {
+            margin-left: @perc;
+        }
+    });
+}
+
+@media screen and (min-width: @xl) {
+    each(range(12), {
+        @perc: percentage(@value / @columns);
+
+        .Col-xl-@{value} {
+            flex: 0 0 @perc;
+            max-width: @perc;
+        }
+
+        &.offset-xl-@{value} {
+            margin-left: @perc;
+        }
+    });
+}
+
+@media screen and (max-width: @sm) {
+    .d-xs-none {
+        display: none;
+    }
+}
+
+@media screen and (max-width: @md) {
+    .d-sm-none {
+        display: none;
+    }
+}
+
+@media screen and (max-width: @lg) {
+    .d-md-none {
+        display: none;
+    }
+}
+
+@media screen and (max-width: @xl) {
+    .d-lg-none {
+        display: none;
+    }
+}
