@@ -5,13 +5,12 @@
   "author": "michaelkrukov",
   "license": "MIT",
   "repository": "michaelkrukov/react-mk-components",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "engines": {
     "node": ">=8",
     "npm": ">=5"
   },
   "scripts": {
-    "build": "./node_modules/.bin/babel src --out-file dist/index.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
