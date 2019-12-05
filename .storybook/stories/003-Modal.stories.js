@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Story } from '../utils';
-import Modal, {
+import {
+  Button,
+  Modal,
   ModalHeader,
   ModalBody,
   ModalFooter,
 }
-from '../../src/components/Modal';
-import Button from '../../src/components/Button';
+from '../../src';
 
 export default {
   title: 'Modal',

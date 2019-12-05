@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../../src/components/Button';
+import { Button } from '../../src';
 
 export default {
   title: 'Button',
@@ -29,7 +29,7 @@ export const withColor = () => (
 const Link = (props) => <a {...props} />
 
 export const asLink = () => (
-  <Button as={Link} href="https://pornhub.com" block danger>
+  <Button as={Link} href="https://vk.com" block danger>
     Don't click me (I'm link)
   </Button>
 );

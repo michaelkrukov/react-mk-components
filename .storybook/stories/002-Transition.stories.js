@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import Button from '../../src/components/Button';
-import Transition from '../../src/components/Transition';
+import { Button, Transition } from '../../src';
 
 export default {
   title: 'Transition',

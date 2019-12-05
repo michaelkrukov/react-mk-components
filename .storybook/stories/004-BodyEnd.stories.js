@@ -1,5 +1,5 @@
 import React from 'react';
-import BodyEnd from '../../src/components/BodyEnd';
+import { BodyEnd } from '../../src';
 
 export default {
   title: 'BodyEnd',

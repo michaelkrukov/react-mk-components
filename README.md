@@ -13,17 +13,18 @@ npm install --save react-mk-components
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
+import { Button } from 'react-mk-components'
 
-import MyComponent from 'react-mk-components'
+const Example => (
+  <Button primary>Primary button</Button>
+);
+```
 
-class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
-}
+## Examples
+
+```bash
+npm run storybook
 ```
 
 ## License
